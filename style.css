@@ -20,7 +20,9 @@ header {
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 200px;
-    border-radius: 10px;
+    height: 280px; /* Điều chỉnh chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để phù hợp với kích thước */
+    border-radius: 10px
 }
 .film-card img {
     width: 100%;
@@ -31,4 +33,22 @@ footer {
     padding: 10px;
     background-color: #ff4081;
     color: white;
+    text-align: center;
+}
+.logo {
+    width: 100px; /* Điều chỉnh kích thước logo */
+    display: block;
+    margin: 0 auto; /* Căn giữa logo */
+}
+
+/* Đảm bảo footer luôn ở cuối trang */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Đẩy footer xuống dưới */
 }
